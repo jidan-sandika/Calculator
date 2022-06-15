@@ -11,8 +11,8 @@
     background-color: #252525;
     color: #fff;
     text-align: right;
-    font-size: 36px;
-    border: none;
+    font-size: 40px;
+    border: 1px solid white;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -25,7 +25,7 @@
     display: flex;
 }
 
-.button {
+.number {
     height: 80px;
     background-color: gray;
     border: 1px solid black;
@@ -39,7 +39,23 @@
     width: 50%;
 }
 
-.operator, .equal-sign {
+.all-clear {
+    border: 1px solid black;
+    font-size: 32px;
+    outline: none;
+}
+
+.operator, .equal-sign, .percentage, .decimal {
+    height: 80px;
+    border: 1px solid black;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    outline: none;
+}
+
+
+.operator, .equal-sign, .percentage, .decimal {
     background-color: orange;
 }
 
@@ -47,6 +63,6 @@ button:hover {
     background-color: darkgray;
 }
 
-.operator:hover, .equal-sign:hover {
+.operator:hover, .equal-sign:hover, .percentage:hover, .decimal:hover {
     background-color: darkorange;
 }

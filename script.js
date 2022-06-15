@@ -43,6 +43,7 @@ const inputOperator = (operator) => {
 operators.forEach((operator) => {
     operator.addEventListener("click", (event) => {
         inputOperator(event.target.value);
+        updateScreen(calculationOperator);
     });
 });
 
